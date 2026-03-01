@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotels</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav-wrapper">
+
+            <div class="logo">
+                <div class="logo-box">Q</div>
+                <span>QuickStay</span>
+                <nav class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="hotels_details.html">Hotels</a>
+                    <a href="reviews.html">Reviews</a>
+                    <a href="about.html">About Us</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+
+
+
+            <div class="nav-right">
+                <span class="globe">🌐</span>
+                <a href="login.html" class="auth-link">Sign In / Sign Up</a>
+            </div>
+
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>ตัวกรอง</h3>
+
+            <div class="filter-box">
+                <input type="text" placeholder="ค้นหาชื่อโรงแรมหรือที่ตั้ง">
+            </div>
+
+            <div class="filter-box">
+                <label>ช่วงราคา (ต่อคืน)</label>
+                <input type="range" min="500" max="5000">
+                <div class="price-range">
+                    <span>฿500</span>
+                    <span>฿5,000</span>
+                </div>
+            </div>
+
+            <div class="filter-box">
+                <label>คะแนนดาว</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> ★★★★★ (5 ดาว)</label>
+                    <label><input type="checkbox"> ★★★★☆ (4 ดาว)</label>
+                    <label><input type="checkbox"> ★★★☆☆ (3 ดาว)</label>
+                </div>
+            </div>
+
+            <div class="filter-box">
+                <label>คะแนนรีวิว</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox"> 8 คะแนนขึ้นไป</label>
+                    <label><input type="checkbox"> 7 คะแนนขึ้นไป</label>
+                    <label><input type="checkbox"> 6 คะแนนขึ้นไป</label>
+                </div>
+            </div>
+        </aside>
+        <!-- Main Content -->
+        <main class="main">
+            <div class="top-bar">
+                <h2>พบ 8 โรงแรม</h2>
+                <select>
+                    <option>จัดเรียงโดย: ยอดนิยม</option>
+                    <option>ราคาต่ำสุด</option>
+                    <option>ราคาสูงสุด</option>
+                </select>
+            </div>
+
+            <div class="hotel-grid">
+
+                <!-- Card -->
+                <div class="hotel-card">
+                    <img src="https://picsum.photos/400/250?1">
+                    <div class="card-body">
+                        <h3>โรงแรมหรูใจกลางกรุง</h3>
+                        <p class="location">กรุงเทพมหานคร, ไทย</p>
+                        <div class="stars">★★★★★</div>
+                        <p class="desc">ที่พักหรูหราพร้อมสิ่งอำนวยความสะดวกครบครัน</p>
+                        <div class="card-footer">
+                            <span class="price">฿3,500 / คืน</span>
+                            <button>ดูรายละเอียด</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hotel-card">
+                    <img src="https://picsum.photos/400/250?2">
+                    <div class="card-body">
+                        <h3>รีสอร์ทริมทะเลพัทยา</h3>
+                        <p class="location">ชลบุรี, ไทย</p>
+                        <div class="stars">★★★★☆</div>
+                        <p class="desc">ติดทะเล วิวสวย บรรยากาศดี</p>
+                        <div class="card-footer">
+                            <span class="price">฿2,800 / คืน</span>
+                            <button>ดูรายละเอียด</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hotel-card">
+                    <img src="https://picsum.photos/400/250?3">
+                    <div class="card-body">
+                        <h3>บูติกโฮเทลเชียงใหม่</h3>
+                        <p class="location">เชียงใหม่, ไทย</p>
+                        <div class="stars">★★★★★</div>
+                        <p class="desc">สไตล์ล้านนา ใกล้แหล่งท่องเที่ยว</p>
+                        <div class="card-footer">
+                            <span class="price">฿1,800 / คืน</span>
+                            <button>ดูรายละเอียด</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+    <footer class="footer">
+
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-box">Q</div>
+                    <span>QuickStay</span>
+                </div>
+                <p>Providing seamless hotel bookings for a global travel experience.</p>
+                <div class="socials">
+                    <span><img src="/images/facebook.png" alt="Facebook" width="50px" height="50px"></span>
+                    <span><img src="/images/instagram.png" alt="Instagram" width="50px" height="50px"></span>
+                    <span><img src="/images/twitter.png" alt="Twitter" width="50px" height="50px"></span>
+                    <span><img src="/images/linkedin.png" alt="LinkedIn" width="50px" height="50px"></span>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#">Home</a>
+                    <a href="#">Hotels</a>
+                    <a href="#">Reviews</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <a href="#">FAQ</a>
+                    <a href="#">Help Center</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 QuickStay. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
