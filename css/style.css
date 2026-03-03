@@ -1,171 +1,182 @@
 /* ========= HTML ========== */
 * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 html {
-    font-size: 16px;
-    scroll-padding-top: 200px;
-    scroll-behavior: smooth;
+  font-size: 16px;
+  scroll-padding-top: 200px;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #ffffff;
 }
 
 /* CONTAINER */
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
 }
 
 /* ================= HEADER ================= */
 
 .header {
-    background: #ffffff;
-    border-bottom: 1px solid #eee;
-    padding: 15px 0;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
+  padding: 15px 0;
 }
 
 .nav-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    font-weight: 600;
-    font-size: 18px;
-    color: #00bcd4;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 18px;
+  color: #00bcd4;
 }
 
 .logo-box {
-    width: 32px;
-    height: 32px;
-    background: #00bcd4;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 6px;
-    margin-right: 8px;
-    font-weight: bold;
+  width: 32px;
+  height: 32px;
+  background: #00bcd4;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  margin-right: 8px;
+  font-weight: bold;
 }
 
 .nav a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #555;
-    font-size: 14px;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #555;
+  font-size: 14px;
 
 }
 
 .nav a:hover {
-    color: #00bcd4;
+  color: #00bcd4;
 }
 
 .nav-right {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .auth-link {
-    margin-left: 15px;
-    text-decoration: none;
-    font-size: 14px;
-    color: #333;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 14px;
+  color: #333;
 }
 
 /* ================= Reviews ================ */
 
 .card {
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    padding: 15px;
-    margin: 40px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 40px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 .card-reviews {
-    background: #ececec75;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    padding: 15px;
-    margin: 40px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background: #ececec75;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 40px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .wrapper {
-    max-width: 500px;
-    margin: auto;
-    width: 90%;
+  max-width: 500px;
+  margin: auto;
+  width: 90%;
 }
 
 .rating {
-    color: #ff9800;
-    font-size: 24px;
-    margin-bottom: 10px;
+  color: #ff9800;
+  font-size: 24px;
+  margin-bottom: 10px;
 }
+
 .rating span {
-    margin-right: 5px;
+  margin-right: 5px;
 }
+
 textarea {
-    width: 100%;
-    height: 100px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    resize: vertical;
-    font-size: 14px;
+  width: 100%;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 14px;
 }
+
 .reviews-btn {
-    margin-top: 10px;
-    padding: 10px 20px;
-    background: #00e1ff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background: #00e1ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
 }
+
 .reviews-btn:hover {
-    background: #00c8df;
+  background: #00c8df;
 }
+
 .reviews-header {
-    font-size: 24px;
-    margin-bottom: 15px;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
+
 .reviews-label {
-    font-size: 16px;
-    margin-bottom: 8px;
+  font-size: 16px;
+  margin-bottom: 8px;
 }
+
 .reviews-comment {
-    font-size: 14px;
-    margin-bottom: 8px;
+  font-size: 14px;
+  margin-bottom: 8px;
 }
+
 .reviews-avg-scores {
-    font-size: 18px;
-    margin-bottom: 15px;
-    text-align: center;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-align: center;
 }
+
 .rating-summary {
-    display: flex;
-    margin-bottom: 15px;
-    justify-content: center;
-    gap: 20px;
-    color: #ff9800;
-    font-size: 24px;
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: center;
+  gap: 20px;
+  color: #ff9800;
+  font-size: 24px;
 }
+
 .rating-total {
-    font-size: 16px;
-    color: #555;
-    text-align: center;
+  font-size: 16px;
+  color: #555;
+  text-align: center;
 }
 
 .review-header {
@@ -174,15 +185,15 @@ textarea {
   align-items: center;
 }
 
-.user-info {
+.review-user-info {
   display: flex;
   align-items: center;
   gap: 14px;
 }
 
 .avatar {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -213,247 +224,447 @@ textarea {
 
 
 .hero {
-      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
-        url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
-      height: 50vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center/cover;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 42px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.search-box {
+  background: #ffffff;
+  padding: 35px 25px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  flex: 1;
+  min-width: 150px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+}
+
+.form-group input:focus {
+  border-color: #00bcd4;
+}
+
+.btn-search {
+  background: #00bcd4;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  align-self: flex-end;
+}
+
+.btn-search:hover {
+  background: #0097a7;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 28px;
+  }
+}
+
+
+
+/* ================== Hotels =================== */
+
+.hotel-detail-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+/* GALLERY */
+.hotel-detail-gallery {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.hotel-detail-gallery img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.hotel-detail-gallery-left img {
+    height: 420px;
+}
+
+.hotel-detail-gallery-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.hotel-detail-gallery-right img {
+    height: 200px;
+}
+
+
+/* INFO */
+.hotel-detail-info {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.hotel-detail-info-left {
+    flex: 2;
+}
+
+.hotel-detail-info-left h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.hotel-detail-rating {
+    color: #00a8cc;
+    margin-bottom: 8px;
+}
+
+.hotel-detail-location {
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.hotel-detail-info-left p {
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.hotel-detail-info-right {
+    flex: 1;
+}
+
+.hotel-detail-map img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+
+/* FACILITIES */
+.hotel-detail-facilities {
+    margin-bottom: 60px;
+}
+
+.hotel-detail-facilities h2 {
+    margin-bottom: 25px;
+}
+
+.hotel-detail-facility-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 25px;
+    border: 1px solid #eee;
+    border-radius: 12px;
+}
+
+.hotel-detail-facility-grid div {
+    color: #444;
+}
+
+
+/* ROOMS */
+.hotel-detail-rooms h2 {
+    margin-bottom: 25px;
+}
+
+.hotel-detail-room-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.hotel-detail-room-card {
+    border: 1px solid #eee;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.3s;
+    background: white;
+}
+
+.hotel-detail-room-card:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.hotel-detail-room-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.hotel-detail-room-content {
+    padding: 20px;
+}
+
+.hotel-detail-room-content h3 {
+    margin-bottom: 8px;
+}
+
+.hotel-detail-room-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.hotel-detail-room-price {
+    font-weight: bold;
+    color: #00a8cc;
+    margin-bottom: 15px;
+}
+
+.hotel-detail-room-price span {
+    color: #666;
+    font-weight: normal;
+}
+
+.hotel-detail-room-content button {
+    padding: 8px 16px;
+    border: 1px solid #00a8cc;
+    background: white;
+    color: #00a8cc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hotel-detail-room-content button:hover {
+    background: #00a8cc;
+    color: white;
+}
+
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+    .hotel-detail-gallery {
+        grid-template-columns: 1fr;
     }
 
-    .hero h1 {
-      color: white;
-      font-size: 42px;
-      font-weight: 600;
-      margin-bottom: 10px;
+    .hotel-detail-info {
+        flex-direction: column;
     }
 
-    .hero p {
-      color: white;
-      font-size: 18px;
-      margin-bottom: 30px;
+    .hotel-detail-facility-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .search-box {
-      background: #ffffff;
-      padding: 35px 25px;
-      border-radius: 15px;
-      width: 90%;
-      max-width: 900px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    .hotel-detail-room-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
+}
 
-    .form-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      margin-bottom: 15px;
+@media (max-width: 600px) {
+    .hotel-detail-room-grid {
+        grid-template-columns: 1fr;
     }
+}
 
-    .form-group {
-      flex: 1;
-      min-width: 150px;
-      text-align: left;
-    }
-
-    .form-group label {
-      font-size: 14px;
-      font-weight: 500;
-      margin-bottom: 5px;
-      display: block;
-    }
-
-    .form-group input {
-      width: 100%;
-      padding: 10px;
-      border-radius: 10px;
-      border: 1px solid #ddd;
-      outline: none;
-      font-size: 14px;
-    }
-
-    .form-group input:focus {
-      border-color: #00bcd4;
-    }
-
-    .btn-search {
-      background: #00bcd4;
-      color: white;
-      border: none;
-      padding: 12px 30px;
-      border-radius: 10px;
-      font-size: 16px;
-      cursor: pointer;
-      transition: 0.3s;
-      align-self: flex-end;
-    }
-
-    .btn-search:hover {
-      background: #0097a7;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 28px;
-      }
-    }
 
 /* ========================================== */
 
-.section{
-  padding:60px 8%;
+.section {
+  padding: 60px 8%;
 }
 
-.section h2{
-  text-align:center;
-  margin-bottom:40px;
-  font-weight:600;
+.section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
 }
 
 /* Cards */
-.card-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-  gap:25px;
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
 }
 
-.card{
-  background:#fff;
-  border-radius:16px;
-  overflow:hidden;
-  box-shadow:0 5px 20px rgba(0,0,0,0.08);
-  transition:0.3s;
+.card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
 }
 
-.card:hover{
-  transform:translateY(-5px);
+.card:hover {
+  transform: translateY(-5px);
 }
 
-.card img{
-  width:100%;
-  height:250px;
-  object-fit:cover;
+.image-home {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
-.card-body{
+.card-body {
   padding: 30px;
 }
 
-.badge{
-  display:inline-block;
-  background:#ffb703;
-  color:#fff;
-  font-size:12px;
-  padding:4px 10px;
-  border-radius:20px;
-  margin-bottom:10px;
+.badge {
+  display: inline-block;
+  background: #ffb703;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
 }
 
-.card-title{
-  font-weight:500;
-  margin-bottom:8px;
+.card-title {
+  font-weight: 500;
+  margin-bottom: 8px;
 }
 
-.price{
-  color:#00bcd4;
-  font-weight:600;
-  float:right;
+.price {
+  color: #00bcd4;
+  font-weight: 600;
+  float: right;
 }
 
-.stars{
-  color:#ff9800;
-  font-size:14px;
-  margin-top:5px;
+.stars {
+  color: #ff9800;
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 /* Reviews */
 
-.review-section{
-  background:#f4f6f8;
-  padding:70px 5%;
+.review-section {
+  background: #f4f6f8;
+  padding: 70px 5%;
 }
 
-.review-section h2{
-  text-align:center;
-  margin-bottom:40px;
-  font-weight:600;
+.review-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 600;
 }
 
-.review-grid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:25px;
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
 }
 
-.review-card{
-  background:#fff;
-  padding:40px;
-  border-radius:18px;
-  box-shadow:0 5px 20px rgba(0,0,0,0.05);
-  transition:0.3s;
+.review-card {
+  background: #fff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
 }
 
-.review-card:hover{
-  transform:translateY(-5px);
+.review-card:hover {
+  transform: translateY(-5px);
 }
 
-.review-header{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-bottom:15px;
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
 }
 
-.review-header h4{
-  font-weight:500;
+.review-header h4 {
+  font-weight: 500;
 }
 
-.stars{
-  color:#f4a100;
-  font-size:14px;
+.stars {
+  color: #f4a100;
+  font-size: 14px;
 }
 
-.review-card p{
-  font-size:14px;
-  line-height:1.7;
-  color:#555;
+.review-card p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555;
 }
 
-.review-btn{
-  text-align:center;
-  margin-top:40px;
+.review-btn {
+  text-align: center;
+  margin-top: 40px;
 }
 
-.review-btn button{
-  padding:10px 25px;
-  border-radius:25px;
-  border:1px solid #ccc;
-  background:#fff;
-  cursor:pointer;
-  transition:0.3s;
+.review-btn button {
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.3s;
   color: #00bcd4;
 }
 
-.review-btn button:hover{
-  background:#00bcd4;
-  color:#fff;
-  border-color:#00bcd4;
+.review-btn button:hover {
+  background: #00bcd4;
+  color: #fff;
+  border-color: #00bcd4;
 }
 
 /* Floating Banner */
-.floating-banner{
-  position:fixed;
-  right:20px;
-  bottom:20px;
-  background:#7b2cbf;
-  color:#fff;
-  padding:12px 20px;
-  border-radius:30px;
-  font-weight:500;
-  box-shadow:0 5px 20px rgba(0,0,0,0.2);
+.floating-banner {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #7b2cbf;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-weight: 500;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ================= Details ================ */
@@ -476,7 +687,7 @@ textarea {
   padding: 16px;
   border-radius: 12px;
   margin-bottom: 16px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
 }
 
 .filter-box label {
@@ -535,7 +746,7 @@ textarea {
   background: #fff;
   border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
   transition: 0.3s;
 }
 
@@ -604,35 +815,39 @@ button:hover {
 
 
 .container-data {
-  max-width: 900px;   /* ความกว้างสูงสุดของเนื้อหา */
-  margin: 0 auto;      /* จัดให้อยู่กึ่งกลาง */
-  padding: 20px;     /* กันเนื้อหาชิดขอบเกินไป */
+  max-width: 900px;
+  /* ความกว้างสูงสุดของเนื้อหา */
+  margin: 0 auto;
+  /* จัดให้อยู่กึ่งกลาง */
+  padding: 20px;
+  /* กันเนื้อหาชิดขอบเกินไป */
 }
-.card-about{
+
+.card-about {
   margin-top: 30px;
   padding: 70px;
   background-color: #F2F2F2;
   text-align: center;
 }
 
-.card-about2{
+.card-about2 {
   margin-top: 30px;
   padding: 70px;
 
 }
 
-.header-about{
+.header-about {
   font-size: 30px;
   text-align: center;
 }
 
-.header-our-about{
+.header-our-about {
   font-size: 25px;
   text-align: center;
   margin-bottom: 50px;
 }
 
-.header-detail-about{
+.header-detail-about {
   margin: 20px;
   font-size: 15px;
   text-align: center;
@@ -642,18 +857,21 @@ button:hover {
 .two-column-about {
   margin-top: 10px;
   display: flex;
-  gap: 20px;      /* ระยะห่างระหว่างซ้าย-ขวา */
+  gap: 20px;
+  /* ระยะห่างระหว่างซ้าย-ขวา */
 }
 
 .left,
 .right {
-  flex: 1;        /* แบ่งพื้นที่เท่ากัน */
+  flex: 1;
+  /* แบ่งพื้นที่เท่ากัน */
 }
 
-.head-our{
+.head-our {
   color: #00bcd4;
 }
-.detail-our{
+
+.detail-our {
   margin-top: 5px;
   font-size: 15px;
   color: gray;
@@ -670,11 +888,15 @@ button:hover {
   background-color: #ffffff;
   border-radius: 8px;
   padding: 30px 20px;
-  text-align: center;              /* ทำให้ข้อความอยู่กลาง */
-  display: flex;                   /* จัดโครงสร้างภายในการ์ด */
+  text-align: center;
+  /* ทำให้ข้อความอยู่กลาง */
+  display: flex;
+  /* จัดโครงสร้างภายในการ์ด */
   flex-direction: column;
-  justify-content: center;         /* จัดเนื้อหาแนวตั้งให้อยู่กลาง */
-  align-items: center;             /* จัดแนวนอนให้อยู่กลาง */
+  justify-content: center;
+  /* จัดเนื้อหาแนวตั้งให้อยู่กลาง */
+  align-items: center;
+  /* จัดแนวนอนให้อยู่กลาง */
 }
 
 .team-wrapper {
@@ -682,7 +904,8 @@ button:hover {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   max-width: 900px;
-  margin: 0 auto; /* ทำให้อยู่กลาง */
+  margin: 0 auto;
+  /* ทำให้อยู่กลาง */
 }
 
 /* การ์ด */
@@ -691,7 +914,7 @@ button:hover {
   padding: 20px 10px;
   border-radius: 12px;
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   transition: 0.3s;
 }
 
@@ -720,56 +943,56 @@ button:hover {
 /* ================= FOOTER ================= */
 
 .footer {
-    background: #f8f9fb;
-    padding-top: 50px;
+  background: #f8f9fb;
+  padding-top: 50px;
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    max-width: 1200px;
-    margin: auto;
-    margin-bottom: 25px;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 25px;
 }
 
 .footer-right {
-    display: flex;
-    gap: 80px;
+  display: flex;
+  gap: 80px;
 }
 
 .footer-brand p {
-    font-size: 14px;
-    color: #666;
-    margin: 15px 0;
+  font-size: 14px;
+  color: #666;
+  margin: 15px 0;
 }
 
 .socials span {
-    margin-right: 10px;
-    cursor: pointer;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
 .footer-links h4 {
-    margin-bottom: 15px;
-    font-size: 16px;
+  margin-bottom: 15px;
+  font-size: 16px;
 }
 
 .footer-links a {
-    display: block;
-    text-decoration: none;
-    color: #666;
-    font-size: 14px;
-    margin-bottom: 8px;
+  display: block;
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+  margin-bottom: 8px;
 }
 
 .footer-links a:hover {
-    color: #00bcd4;
+  color: #00bcd4;
 }
 
 .footer-bottom {
-    text-align: center;
-    padding: 20px;
-    border-top: 1px solid #e5e5e5;
-    font-size: 13px;
-    color: #888;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #e5e5e5;
+  font-size: 13px;
+  color: #888;
 }
