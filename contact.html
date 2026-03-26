@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hotels</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+        .contact-container {
+            max-width: 900px;
+            margin: 40px auto;
+            width: 90%;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        input,
+        textarea,
+        button {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            .footer-container {
+                flex-direction: column;
+            }
+
+            .footer-right {
+                flex-direction: column;
+            }
+        }
+
+        h2 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+        }
+
+        /* Mobile */
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            p {
+                font-size: 0.85rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container nav-wrapper">
+
+            <div class="logo">
+                <div class="logo-box">Q</div>
+                <span>QuickStay</span>
+                <nav class="nav">
+                    <a href="index.html">Home</a>
+                    <a href="hotels_details.html">Hotels</a>
+                    <a href="reviews.html">Reviews</a>
+                    <a href="about.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                </nav>
+            </div>
+
+            <div class="nav-right">
+                <span class="globe">🌐</span>
+                <a href="#" class="auth-link">Sign In / Sign Up</a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <div class="contact-container">
+        <div>
+            <h2 style="text-align: center; font-size: 1.7rem;">ติดต่อเรา</h2>
+            <p style="text-align: center; color: #5d5d5d;">หากคุณมีคำถามเกี่ยวกับบริการของเราหรือต้องการความช่วยเหลือ?</p>
+            <p style="text-align: center; color: #5d5d5d;">เรายินดีให้คำปรึกษาและพร้อมตอบทุกข้อสงสัยของคุณ</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-left">
+                <div class="card" style="padding: 20px;">
+                    <h3 style="font-size: 1.3rem; margin-bottom: 10px;">ส่งข้อความหาเรา</h3>
+                    <p style="font-size: 0.9rem; color: rgb(110, 110, 110); margin-bottom: 20px;">มีคำถามหรือข้อสงสัย?
+                        กรุณากรอกแบบฟอร์มด้านล่าง เรายินดีช่วยเหลือคุณ</p>
+                    <form action="#" method="POST">
+                        <div class="form-group" style="margin-bottom: 15px;">
+                            <label for="name">ชื่อ:</label>
+                            <input type="text" id="name" name="name" required placeholder="ชื่อของคุณ">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 15px;">
+                            <label for="email">อีเมล:</label>
+                            <input type="email" id="email" name="email" required placeholder="อีเมลของคุณ">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 15px;">
+                            <label for="subject">หัวข้อ:</label>
+                            <input type="text" id="subject" name="subject" required placeholder="หัวข้อ">
+                        </div>
+                        <div class="form-group" style="margin-bottom: 15px;">
+                            <label for="message">ข้อความ:</label>
+                            <textarea id="message" name="message" rows="5" required
+                                placeholder="ข้อความของคุณ"></textarea>
+                        </div>
+                        <button type="submit" style="width: 100%;">ส่งข้อความ</button>
+                    </form>
+                </div>
+            </div>
+            <div class="contact-right">
+                <div class="card" style="padding: 20px;">
+                    <div>
+                        <h3 style="font-size: 1.3rem; margin-bottom: 20px;">ข้อมูลการติดต่อ</h3>
+                        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAe1BMVEUAAAD////8/Pzt7e3w8PAqKir5+fnMzMxnZ2fJycnm5ua0tLRdXV3g4OD39/fd3d1+fn67u7uKioo3NzceHh5AQEB5eXmWlparq6u/v79FRUVycnK4uLgYGBgQEBCioqJSUlIjIyNqamqHh4ejo6NPT08yMjKamprV1dXY6h8mAAAKDklEQVR4nO2d6ULyOhCGadnEVoqAAqKluCD3f4UHVBTaZJZkMoHv8P635LFpMpktreRfVyv2AILrSnj5uhJevq6El68r4eXrSnj5uhJevjQI02Ix/xzlT91p2dqrfFlPquX4Pet3FH49KGHa3s7fnlqQuq+z59ugoMEIe0W2nIBwf3rJx4PbUAMJQ9jO8imR7leTcT/IWAIQFjM23UF5NhQfjjRhMd644n3rJhP+KkUJO+8PfnhfKpei01WQsH8jgPet7qonNiwpwvTZc3bW9Sa1uMoQdlZdWb69XrciY5MgTFelPN9eeSEwOgHC9zB434x38QkXzpsfTaN2XMJtFZZvp3IVkTB9DM6318Zrf/QhXKjw7bX0MObcCTtyGzyucqFPuAi0Q9i0dLVyXAl1vsBjvTgaAG6EReAtwqyZHmEWg2+n3OVg5UKoP0MPmjqYOHzCDuxaCqzn8IR3UT7BP7E/Ri7hIC7fTo9hCWOtMcfK04CEIQ9KdD2wbDgW4Wdsth9tOLsGh3AWm+xXXQYig/B8AFmIdMJVbKoTbcjfIpnwPBaZP02oKyqV8Dk2UUOVLGE/No9BS0nC29g0RtEMOBLhcB0bxqy5GOFHbBSbKMd+CuFbbBCrSsK2SCAkLKOP2eBHixk1eC8iwoKKE96hP/N0GghTtX3GAoRoXLBxYBtroB008CZEP8LP5t+ougGwTxEjRM/0phVb1YS98SNEd8J30191VNAOyrwIMcehYYruNVJBOwiOMMKEmDlq8woVKmQH5R6EyJLxZP3DSoPsV2BgCiTEln17QoheaHGvF+g4DBFiJwrI//yignYQtO9DhK/wY8Hpr+wSAOIZACG2zIBL2FAF7FfApggQIib0CAJUP5DYkxnshPfIMxFrCTfYRfXgQIhkqr3BgEmS66AdZLXArYTYqRBNOVOOUln3ZhthirxCwtEzQLoiJNu2byPEXiHBCTRXAfvVB5MQC2UT8ltTFbA/WdxSFkJsL1zjgOobhsUCsRBiCyEp1KztRzbPKzMhOjaSLzbRzHxr2WwQMyHqS0L9P19S3jBKY+qbmRDNyiMm7kqUXzBkPOwYCfHTHQ1Qe8MwbtLGseIGF5FQe8MwHaJMY23jjyIS6jqHzfE201gJc4tKSPhnSWpCJCScCqiE2huGYZoaxkrx55IJldcawzQ1jJUyKHLZlfKW+EIipBxdaTs+8d8lqea/3kBIeRDNaktQf524mkGMJiEpsQRxQ/1K173fMh0wmoSkLWxDJFQ+55vc301Cmi1Jy5xT3vD3apyDG4RtWi0MqUpnG5jGpEalW4OQOCpSypVqWsaPGt7vBiExk6JLKEPSjZMeBlb/EBuEVDML3xEjZfvVd8Q6YY9adI5O0zRSMtw9Qkg/DGCraZQ52mqapnVC+vJnSVI4KFrpyStCyEiFAQGH0YqHpgghw4sL5rFEzGdECCv6k7oQYajhE1SLitUJOZMLyFRQt7iPVDO3Gu+UIXvcNSph7WRXI+R5jupbj+N/Sli11JMaIc8OAb7EWLthq3FErBFi6Qk12Y/6ym7EY9U+nhoh161if4nxtos1SMhNZbIXdQx1876OBRKyD+V2t6K2l+1PpzVfNcIl92nAESNaVftp6K9GyHf+2dOtlLOi/nQ6r2qE/EQmYMeIVTZ8GryoEVb85wFNjhyeJqFTw7RG6FLDZV9sIhX1gYQuqwOQSRvnGHzqMhV4h9BBMUr9N0hYOT0SyMxgbz8CAmepW1IoME/TCNWZ4FrqGAwDgm1k96ScwP3QdVIBMeGhevwJtGlcg0W25M69OtqIoF3qXCYBVY53lL3fp7/ueT78E9TbcKia37YGCZln/COBZdVpJQeACj7je8SLwCKhVHFfhP00Pu4VuImD3kED9rV5eQHhyDenYO+j8vhyYX+pXxk2nCl1Rx31V6PrwnleIz7vyvW5eyGhb+LHeDDkbx3ddUjcws8JiFXSUPr4HE2y3szFYVdrPuQRPzQJy5Vqo6b9aeC1N2ebtVj80De9AIkMozZFo941vWeeyrEYsLc3Hm1OCfYfNs6BPusEhsXx/Q87eGvqgdUUt3lft4xTHZaLIZC2jDfDTy3bP1DNe0cOZmH5NBKeFUICcds04A+wBVubNjI8J0oi245SUXPbmCwPWI+59J2weeB5bcTcRFBdUtFQccpIyZRLMtQuwnMTRWqVNrS6qGPLbEospVog48PzS2WyXqfExo3tw6+V9EtXQNuPkiMsk1JIfSU7E+ChbK3fOD3lK+B3KXneQmkUjNbbbealOdA7aPo1HestKJK4JMYoqLUTqd5CLDwd5h61BFoMaTUzcn2syHUnYoS0uifBjhZutxl4ENJq1ySzKIhdVHlKracDav2hZD7TxPcyI9P4rGYXtYZUtPFKKb/e2JM8qHXAwp26jG35fGQdnjE+ZCRMZW/JYbb6R2U9KhrD7Y49FXhyvQTHrNRWbMTpqSCeJiK5bVhPsJy+GEkljfjkfwneQdZulZzeJiFqlqReo9Xk4vWnCZFYuJH5Gq2vkNdjKEwf/UeBi3CtXyG3TxTW68tRnncZAgspu9dXqDtzpu6X4H3J6sJg92sLV4b95MNo95nye+4FvNHig9yRoS57MoxL38SQdcobpH+zRYDX26X3ZeA63k/2nc0pEFJx618aurfMzYB1LeUWmlNuPWjDJzF3R/QvEozLuPYRVmn6MFpQ3iR8YnXuBa3V0bn63IK+jt4zEqtw7+et2DTgY5RtzWtPMcbC0j492ZXTtNcPN+P586K/Le6KYtsfPGezJWHP8umrH7HonC7E74x17Yp/ZyUmz/stzvmioB/53lFCuGcmrvzvmYlXZEcS2lZc6L6naCI03ab0B4xYeY5I6M6u/8G9a+oFE1TJ3Z13pqsNfiMZnfDfv8PyHBdUqNTKhfDMLssNcJfs+VxZ/a1GkqUA4Vnd6bwOcadzlE6WFgW6l/t8Jmqwu9XPZbmZkL9BPmGoeA1LFS/xgUl4Bmd+bpoVlzApIntu2MFyNmHSUb604lT8kA6fEL+6M5xeHDI6XAijtYDKXfIAnAgjfYxu+SpuhDF6lrimjrkSJgvZ7D5US1awUYIwaatezuGe3uBOqHlh7JJlp8kRJqnOvtH1SjP2IkySbRUe0DOPypMwSe4Dx4kffVPhvQmTNOSRKvdPS/Un3Jf1Bto5conSKQnCnTX+GcArfiNTxyBDuHuPmXCm34idM2WRFOFOfTkToLvy2ABrEiTcmTkribNjuRQtsxEl3E1WPPsFUZ4JpEofS5hwr2LsfLaqMrnZeVAAwp1us5xNOXlzTqwFFYZwp+F2/krNwS3zt4HU0tlQMMK9eu3tagQvPuubcXYr/OWdKijhj3rF/Xz2mD+syx/bp5xuPl7H71k/QPllQxqEcXUlvHxdCS9fV8LL15Xw8nUlvHxdCS9f/z7hf0wBpvu+a+B0AAAAAElFTkSuQmCC"
+                                alt="" width="25px" height="25px" style="margin-right: 10px;">
+                            <div>
+                                <p>โทรศัพท์</p>
+                                <p>+1 (123) 456-7890</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                            <img src="data:image/png;base64,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"
+                                alt="" width="25px" height="25px" style="margin-right: 10px;">
+                            <div>
+                                <p>อีเมล</p>
+                                <p>info@quickstay.com</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                            <img src="data:image/png;base64,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"
+                                alt="" width="25px" height="25px" style="margin-right: 10px;">
+                            <div>
+                                <p>ที่อยู่สำนักงาน</p>
+                                <p>123 Main Street, City, Country</p>
+                            </div>
+                        </div>
+                        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+                            <img src="data:image/png;base64,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"
+                                alt="" width="30px" height="30px" style="margin-right: 10px;">
+                            <div>
+                                <p>เวลาทำการ</p>
+                                <p>จันทร์ - ศุกร์: 9:00 น. - 18:00 น.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-box">Q</div>
+                    <span>QuickStay</span>
+                </div>
+                <p>Providing seamless hotel bookings for a global travel experience.</p>
+                <div class="socials">
+                    <img src="/images/facebook.png" alt="Facebook" width="50px" height="50px">
+                    <img src="/images/instagram.png" alt="Instagram" width="50px" height="50px">
+                    <img src="/images/twitter.png" alt="Twitter" width="50px" height="50px">
+                    <img src="/images/linkedin.png" alt="LinkedIn" width="50px" height="50px">
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#">Home</a>
+                    <a href="#">Hotels</a>
+                    <a href="#">Reviews</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Company</h4>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <a href="#">FAQ</a>
+                    <a href="#">Help Center</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2026 QuickStay. All rights reserved.
+        </div>
+    </footer>
+</body>
+
+</html>
